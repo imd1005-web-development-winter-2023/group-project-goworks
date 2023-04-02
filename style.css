@@ -6,50 +6,86 @@
  VARIABLES
 */
 :root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
-
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
-
-  /* Body configuration */
-  --body-default-colour: var(--colour-peppermint);
-  --body-background-colour: var(--colour-cello);
+    /* Core colours */
+    /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
+    --colour-burgandy: #c2776c;
+    --colour-white: #ffffff;
+    --colour-grey: #8a8a8a;
+  
+    /* Header configuration */
+    --header-heading-colour: var(--colour-burgandy);
+  
+    /* Body configuration */
+    --body-default-colour: var(--colour-burgandy);
+    --body-background-colour: var(--colour-white);
+  }
+  
+  .header{
+    list-style: none;
+    color: var(--colour-grey);
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
 }
 
-/*
-  PAGE / BODY
-*/
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+.header li:nth-child(1){
+  flex-grow: 0.5;
 }
 
-main {
-  min-height: 100vh;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+a:link{
+  text-decoration: none;
+  color: var(--colour-grey);
 }
 
-/*
-  Screen reader text utility class
-*/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+a:visited{
+  text-decoration: none;
+  color: var(--colour-grey);
 }
+
+a:hover{
+
+  border-radius: 200px;
+  font-weight: 200;
+  color: var(--colour-burgandy);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+a:active{
+  text-decoration: underline;
+}
+
+  /*
+    PAGE / BODY
+  */
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--body-default-colour);
+    background-color: var(--body-background-colour);
+  }
+  
+  main {
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*
+    Screen reader text utility class
+  */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
