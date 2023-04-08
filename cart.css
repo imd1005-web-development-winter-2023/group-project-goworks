@@ -2,7 +2,7 @@ body{
     background-color: #E3E7E8;
     font-family: system-ui;
 }
-.container{
+.cart-container{
     width: 1000px;
     margin: auto;
     transition: 0.5s;
@@ -60,7 +60,7 @@ header .shopping span{
     width: 100%;
     padding: 10px;
 }
-.card{
+.cart{
     position: fixed;
     top:0;
     left: 100%;
@@ -69,13 +69,13 @@ header .shopping span{
     height: 100vh;
     transition: 0.5s;
 }
-.active .card{
+.active .cart{
     left: calc(100% - 500px);
 }
 .active .container{
    transform: translateX(-200px);
 }
-.card h1{
+.cart h1{
     color: #E8BC0E;
     font-weight: 100;
     margin: 0;
@@ -84,7 +84,7 @@ header .shopping span{
     display: flex;
     align-items: center;
 }
-.card .checkOut{
+.cart .checkOut{
     position: absolute;
     bottom: 0;
     width: 100%;
