@@ -78,11 +78,18 @@ a:hover{
   height: 300px;
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 55px;
-  background-color: red;
+  padding-left: 60px;
+  background-color: var(--colour-crimson);
   color: var(--colour-white);
   font-size: 40px;
   font-weight: bolder;
+}
+
+.contact-title{
+  font-family: "oswald", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 8px;
 }
 
 .storeinfo{
@@ -186,6 +193,43 @@ div.footer{
   height: 400px;
   background-color: var(--colour-pink);
 }
+
+/* about css */
+.about{
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px; 
+}
+
+.about li:nth-child(1){
+  width: 300px;
+  height: 300px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 85px;
+  background-color: var(--colour-crimson);
+  color: var(--colour-white);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.about-title{
+  font-family: "oswald", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  letter-spacing: 8px;
+}
+
+.about-para{
+  text-align: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 17px;
+}
+
 /*
   PAGE / BODY
 */
