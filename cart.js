@@ -19,37 +19,37 @@ let products = [
     {
         id: 1,
         name: 'Bounce & Ball',
-        image: '1.PNG',
+        image: '1.png',
         price: 20.00,
     },
     {
         id: 2,
         name: 'Plane',
-        image: '2.PNG',
+        image: '2.png',
         price: 41.00,
     },
     {
         id: 3,
         name: 'Classic Car',
-        image: '3.PNG',
+        image: '3.png',
         price: 24.00,
     },
     {
         id: 4,
         name: 'Toy Truck',
-        image: '4.PNG',
+        image: '4.png',
         price: 40.00,
     },
     {
         id: 5,
         name: 'Rings Rattle',
-        image: '5.PNG',
+        image: '5.png',
         price: 35.00,
     },
     {
         id: 6,
         name: 'Skatebaord',
-        image: '6.PNG',
+        image: '6.png',
         price: 100.00,
     }
 ];
