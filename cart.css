@@ -17,7 +17,7 @@
   }
 
 body{
-    background-color:var(--body-background-colour);
+    background-color:var(--color-white);
     font-family: system-ui;
 }
 .cart-container{
