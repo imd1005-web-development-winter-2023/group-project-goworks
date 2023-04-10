@@ -191,8 +191,10 @@ header .shopping span{
 /* Footer css done by Alisha */
 div.footer{
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: var(--colour-pink);
+   margin-top:50px ;
+  
   }
   
   .footer-info{
