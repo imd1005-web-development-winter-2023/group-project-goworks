@@ -18,39 +18,39 @@ closeShopping.addEventListener('click', ()=>{
 let products = [
     {
         id: 1,
-        name: 'PRODUCT NAME 1',
+        name: 'Bounce & Ball',
         image: '1.PNG',
-        price: 120000
+        price: 'C$20.00'
     },
     {
         id: 2,
-        name: 'PRODUCT NAME 2',
+        name: 'Plane',
         image: '2.PNG',
-        price: 120000
+        price: 'C$41.00'
     },
     {
         id: 3,
-        name: 'PRODUCT NAME 3',
+        name: 'Classic Car',
         image: '3.PNG',
-        price: 220000
+        price: 'C$24.00'
     },
     {
         id: 4,
-        name: 'PRODUCT NAME 4',
+        name: 'Toy Truck',
         image: '4.PNG',
-        price: 123000
+        price: 'C$40.00'
     },
     {
         id: 5,
-        name: 'PRODUCT NAME 5',
+        name: 'Rings Rattle',
         image: '5.PNG',
-        price: 320000
+        price: 'C$35.00'
     },
     {
         id: 6,
-        name: 'PRODUCT NAME 6',
+        name: 'Skatebaord',
         image: '6.PNG',
-        price: 120000
+        price: 'C$100.00'
     }
 ];
 let listCards  = [];

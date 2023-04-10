@@ -102,7 +102,7 @@ header .shopping span{
     text-align: center;
     background-color: #DCE0E1;
     padding: 20px;
-    box-shadow: 0 50px 50px #757676;
+    box-shadow: 0 20px 20px #757676;
     letter-spacing: 1px;
 }
 .list .item img{
@@ -115,10 +115,11 @@ header .shopping span{
     margin: 10px;
 }
 .list .item button{
-    background-color: #1C1F25;
+    background-color:var(--colour-purple);
     color: #fff;
     width: 100%;
     padding: 10px;
+    border-radius: 5px;
 }
 .cart{
     position: fixed;
