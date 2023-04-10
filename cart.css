@@ -102,7 +102,7 @@ header .shopping span{
     text-align: center;
     background-color: var(--body-background-colour);
     padding: 20px;
-    box-shadow: 0 20px 20px #757676;
+   
     letter-spacing: 1px;
 }
 .list .item img{
