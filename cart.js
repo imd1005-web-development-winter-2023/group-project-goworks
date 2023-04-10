@@ -20,37 +20,37 @@ let products = [
         id: 1,
         name: 'Bounce & Ball',
         image: '1.PNG',
-        price: 'C$20.00'
+        price: 20.00,
     },
     {
         id: 2,
         name: 'Plane',
         image: '2.PNG',
-        price: 'C$41.00'
+        price: 41.00,
     },
     {
         id: 3,
         name: 'Classic Car',
         image: '3.PNG',
-        price: 'C$24.00'
+        price: 24.00,
     },
     {
         id: 4,
         name: 'Toy Truck',
         image: '4.PNG',
-        price: 'C$40.00'
+        price: 40.00,
     },
     {
         id: 5,
         name: 'Rings Rattle',
         image: '5.PNG',
-        price: 'C$35.00'
+        price: 35.00,
     },
     {
         id: 6,
         name: 'Skatebaord',
         image: '6.PNG',
-        price: 'C$100.00'
+        price: 100.00,
     }
 ];
 let listCards  = [];

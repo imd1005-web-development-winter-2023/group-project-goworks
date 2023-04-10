@@ -17,7 +17,7 @@
   }
 
 body{
-    background-color: #E3E7E8;
+    background-color:var(--body-background-colour);
     font-family: system-ui;
 }
 .cart-container{
@@ -100,7 +100,7 @@ header .shopping span{
 }
 .list .item{
     text-align: center;
-    background-color: #DCE0E1;
+    background-color: var(--body-background-colour);
     padding: 20px;
     box-shadow: 0 20px 20px #757676;
     letter-spacing: 1px;
