@@ -19,7 +19,7 @@ let products = [
     {
         id: 1,
         name: 'Bounce & Ball',
-        image: '1.png',
+        image: '1.PNG',
         price: 20.00,
     },
     {
