@@ -95,3 +95,4 @@ setInterval(() => {
   images[index].classList.add('active');
 }, 5000);
 ///  SLIDESHOW - END     ///
+
