@@ -137,7 +137,8 @@ header .shopping span{
    transform: translateX(-200px);
 }
 .cart h1{
-    color: #E8BC0E;
+    background-color: #BB2423;
+    color: #ffffff;
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
@@ -154,7 +155,7 @@ header .shopping span{
 
 }
 .cart .checkout div{
-    background-color: #E8BC0E;
+    
     width: 100%;
     height: 70px;
     display: flex;
@@ -164,8 +165,8 @@ header .shopping span{
     cursor: pointer;
 }
 .cart .checkout div:nth-child(2){
-    background-color: #1C1F25;
-    color: #fff;
+    
+    color: #0f0f0f;
 }
 .listCart li{
     display: grid;
