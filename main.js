@@ -1,14 +1,7 @@
 //
-//  JS File
-//  You may remove the code below - it's just boilerplate
-//
-
-//
-// Variables
-//
 
 // Constants
-const appID = "app";
+/*const appID = "app";
 const headingText = "Develop. Preview. Ship.";
 const headingTextIcon = "🚀";
 const projectDueDate = "11 April 2023 11:59";
@@ -70,4 +63,36 @@ function inititialise() {
 // Inits & Event Listeners
 //
 
-inititialise();
+inititialise();*/
+
+
+
+
+/*///   SLIDESHOW    -start  --rasha ///
+
+// Get the slideshow container and images
+const slideshowContainer = document.querySelector('.slideshow-container');
+const images = slideshowContainer.querySelectorAll('img');
+
+// Set the first image to active
+let index = 0;
+images[index].classList.add('active');
+
+// Switch between images every 5 seconds
+setInterval(() => {
+  // Remove the active class from the current image
+  images[index].classList.remove('active');
+  
+  // Increment the index to switch to the next image
+  index++;
+  
+  // Reset the index to 0 if it exceeds the number of images
+  if (index >= images.length) {
+    index = 0;
+  }
+  
+  // Add the active class to the next image
+  images[index].classList.add('active');
+}, 5000);
+///  SLIDESHOW - END     ///
+

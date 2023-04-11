@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <!-- Set the page title -->
-    <title>Group Project</title>
+    <title>Kiddoo Toys</title>
 
     <!-- Set the charset we're using to UTF-8 -->
     <meta charset="UTF-8" />
@@ -15,21 +15,131 @@
 
     <!-- This is where all of our awesome CSS code goes -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- FONTS-->
+    <link rel="stylesheet" href="https://use.typekit.net/bjr3grh.css">
 
     <!-- Set the Favicon  -->
-    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+    <link rel="icon" href="images/favicon.png" type="image/svg+xml" />
   </head>
-  <body>
-    <!--
+  
+     
+ <body>
 
-      ADD YOUR GROUP PROJECT CODE
+    <div class="cart-container">
+      <header>
+          <ul class = "header">
+              <li><a href ="index.html" class="logo-title">KIDDOO TOYS</a></li>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "shop.html">Shop</a></li>
+                <li><a href = "about.html">About</a></li>
+                <li><a href = "contact.html">Contact</a></li>
+            </ul>
+          <div class="shopping">
+              <img src="images/Cart/shopping-bag.svg" alt="cart-logo">
+              <span class="quantity">0</span>
+          </div>
+      </header>
+      <div class="list"></div>
+  </div>
 
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
-
-    -->
     <main>
-      <div id="app"></div>
+    <!-- Done by Rasha-->
+    <section class="home" id="home">
+      <div class = "content">
+        <h3>Kiddoo Toys</h3>
+        <span>Watch Them Grow!</span>
+        <p>Welcome to Kiddoo Toys! Here you will find the best toddler toys online that will help children enhance their developmental
+          skills and learn the best ways to interact with the world around them.</p>
+          <a href="shop.html" class="btn">Shop Now</a>
+       </div>
+    </section>
+    <section class="arrivals">
+      <h1>Our Latest Arrivals</h1>
+      <div class="arrival-photos">
+          <a href="shop.html"> <!-- Link to shop.html with image1 -->
+            <img src="images/image1.jpg" class="image1">
+            <p class="title">Stack & Sort Puzzle</p>
+          </a>
+          <a href="shop.html"> <!-- Link to product1.html with image2 -->
+            <img src="images/image2.jpg" class="image1">
+            <p class="title">Zoo Stacking Cups</p>
+          </a>
+          <a href="shop.html"> <!-- Link to product2.html with image3 -->
+            <img src="images/image3.jpg" class="image1">
+            <p class="title">Bounce n Roll Rattle</p>
+          </a>
+        </div>
+      </section>
     </main>
+    <!-- Add footer in here if needed-->
+  <div class = "footer">
+    <ul class = "footer-info">
+
+      <div class = "footersection">
+        <li><h2 class = "footerinfohead" id = "footerinfohead">Playground</h2></li>
+        <br>
+        <li><h3 class = "footersite" id = "footersite">500 Terry Francois Street 
+          <br>
+          San Francisco, CA 94158
+          <br>
+          123-456-7890
+          <br>
+          info@my-domain.com</h3></li></div>
+          
+      <div class = "footersection">
+        <li><h2 class = "footerinfohead" id = "footerinfohead">Visit</h2></li>
+        <br>
+        <li><h3 class = "footersite" id = "footersite">Shop
+          <br>
+          About
+          <br>
+          Contact
+          <br>
+          Stockists</h3></li></div>
+
+      <div class = "footersection">
+        <li><h2 class = "footerinfohead" id = "footerinfohead">Information</h2>
+        <br>
+        <li><h3 class = "footersite" id = "footersite">FAQ
+          <br>
+          Shipping & Returns
+          <br>
+          Store Policy
+          <br>
+          Payment Methods</h3></li></div>
+
+      <div class = "footersection">
+        <li><h2 class = "footerinfohead" id = "footerinfohead">Social</h2>
+        <br>
+        <li><h3 class = "footersite" id = "footersite">Facebook
+          <br>
+          Twitter
+          <br>
+          Instagram
+          <br>
+          Pinterest</h3></li></div>
+    </ul>
+
+    <br><br><br><br>
+
+    <ul class = "footer2">
+      <div class = "keepplaying">
+        <li>Keep<br>Playing</li>
+      </div>
+
+      <div class = "emailform">
+        <li><form action="/server-page-handling-form-data" method="post">
+        <input name = "email" type="text1" class="email-add" placeholder="Enter your email here" /></form></li>
+        <br>
+        <li><form action="/server-page-handling-form-data" method="post">
+          <input type="submit1" value="Submit"/></form></li>
+      </div>
+    </ul>
+
+    <br><br><br>
+
+    <p class = "copyright">© 2023 by Playground.</p>
+  </div>
 
     <!-- This is where we add our awesome JavaScript code -->
     <script src="./main.js"></script>
