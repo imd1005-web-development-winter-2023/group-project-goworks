@@ -152,7 +152,7 @@ header .shopping span{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+   
 }
 .cart .checkout div{
     
@@ -168,10 +168,16 @@ header .shopping span{
     
     color: #0f0f0f;
 }
+
+.closeshopping{
+    color: #fff;
+    background-color: #BB2423;
+
+}
 .listCart li{
     display: grid;
     grid-template-columns: 100px repeat(3, 1fr);
-    color: #fff;
+    color:#0f0f0f;
     row-gap: 10px;
 }
 .listCart li div{
