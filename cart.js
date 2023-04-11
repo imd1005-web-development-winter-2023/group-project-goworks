@@ -68,20 +68,20 @@ function initApp(){
             <img src="images/Cart/${value.image}">
             <div class="title">${value.name}</div>
             <div class="price">${value.priceSign}${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Cart</button>`;
+            <button onclick="addToCart(${key})">Add To Cart</button>`;
         list.appendChild(newDiv);
     })
 }
 initApp();
-function addToCard(key){
+function addToCart(key){
     if(listCards[key] == null){
         // copy product form list to list card
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1;
     }
-    reloadCard();
+    reloadCart();
 }
-function reloadCard(){
+function reloadCart(){
     listCard.innerHTML = '';
     let count = 0;
     let totalPrice = 0;
@@ -112,5 +112,5 @@ function changeQuantity(key, quantity){
         listCards[key].quantity = quantity;
         listCards[key].price = quantity * products[key].price;
     }
-    reloadCard();
+    reloadCart();
 }

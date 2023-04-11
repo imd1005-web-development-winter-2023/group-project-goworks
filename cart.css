@@ -144,8 +144,8 @@ header .shopping span{
 }
 .cart h1{
     background-color:#FE4DAF;
-    color:var(--colour-black);
-    font-weight: 100;
+    color:var(--colour-white);
+    font-weight: 200;
     margin: 0;
     padding: 0 20px;
     height: 80px;
@@ -175,10 +175,22 @@ header .shopping span{
     color: #0f0f0f;
 }
 
+.total h3{
+  color:darkslategrey;
+}
+
+.total h4{
+  color:darkslategrey;
+}
+
 .closeshopping{
     color: #fff;
     background-color: #FE4DAF;
 
+}
+
+.closeshopping h4{
+  color: #fff;
 }
 
 .listCart li{
