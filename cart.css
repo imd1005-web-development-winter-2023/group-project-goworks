@@ -123,9 +123,9 @@ header .shopping span{
     border-radius: 5px;
 }
 
-.list .item button a:hover{
-    background-color:var(--colour-pink);
-    color:white;
+.list .item button:hover {
+    background-color:var(--colour-black);
+    color:rgb(230, 215, 131);
 }
 .cart{
     position: fixed;
