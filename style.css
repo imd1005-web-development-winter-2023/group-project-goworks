@@ -361,7 +361,7 @@ section{
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: url('/group-project-goworks-main/images/main-image.jpg') no-repeat;
+  background: url('/images/main-image.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
