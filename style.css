@@ -1,10 +1,4 @@
-/*
-  CSS File
-*/
 
-/*
- VARIABLES
-*/
 :root {
     /* Core colours */
     /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
@@ -21,27 +15,27 @@
     --body-default-colour: var(--colour-black);
     --body-background-colour: var(--colour-white);
   }
-  
+
+  body {
+    font-family: "oswald", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    color: var(--body-default-colour);
+    background-color: var(--body-background-colour);
+    margin: 0;
+    padding: 0;
+  }
+
 .cart-container{
     width: 1000px;
     margin: auto;
     transition: 0.5s;
 }
 
-body {
-  font-family: "oswald", sans-serif;
-  font-style: normal;
-  letter-spacing: 2px;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
-  margin: 0;
-  padding: 0;
-}
 header{
-
-  display: grid;
-  grid-template-columns: 1fr 50px;
-  margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
 }
 
 .header{
@@ -56,10 +50,9 @@ header{
 
 
 }
-
 .header li:nth-child(1){
-flex-grow: 0.5;
-color:var(--colour-pink);
+  flex-grow: 0.5;
+  color:var(--colour-pink);
 }
 
 .logo-title{
@@ -70,44 +63,289 @@ color:var(--colour-pink);
   letter-spacing: 8px;
   
 }
-
 a:link{
-text-decoration: none;
-color: var(--colour-grey);
+  text-decoration: none;
+  color: var(--colour-grey);
 }
 
 a:visited{
-text-decoration:none;
-color: var(--colour-pink);
+  text-decoration:none;
+  color: var(--colour-pink);
 }
 
 a:hover{
 
-font-weight: 200;
-color: var(--colour-crimson);
+  font-weight: 200;
+  color: var(--colour-crimson);
 }
 
 header .shopping{
-  position: relative;
-  text-align: right;
+    position: relative;
+    text-align: right;
 }
 header .shopping img{
-  width: 40px;
+    width: 40px;
 }
 header .shopping span{
-  background: red;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  position: absolute;
-  top: -5px;
-  left: 80%;
-  padding: 3px 10px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.list .item{
+    text-align: center;
+    background-color: var(--body-background-colour);
+    padding: 20px;
+   
+    letter-spacing: 1px;
+}
+.list .item img{
+    width: 90%;
+}
+.list .item .title{
+    font-weight: 600;
+}
+.list .item .price{
+    margin: 10px;
+}
+.list .item button{
+    background-color:rgb(230, 215, 131);
+    color: var(--colour-black);
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
-/* contact css done by alisha*/
+.list .item button:hover {
+    background-color:var(--colour-black);
+    color:rgb(230, 215, 131);
+}
+.cart{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #fff;
+    height: 100vh;
+    transition: 0.5s;
+}
+.active .cart{
+    left: calc(100% - 500px);
+}
+.active .container{
+   transform: translateX(-200px);
+}
+.cart h1{
+    background-color:#FE4DAF;
+    color:var(--colour-white);
+    font-weight: 200;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.cart .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+}
+.cart .checkout div{
+    
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cart .checkout div:nth-child(2){
+    
+    color: #0f0f0f;
+}
+
+.total h3{
+  color:darkslategrey;
+}
+
+.total h4{
+  color:darkslategrey;
+}
+
+.closeshopping{
+    color: #fff;
+    background-color: #FE4DAF;
+
+}
+
+.closeshopping h4{
+  color: #fff;
+}
+
+.listCart li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color:#0f0f0f;
+    row-gap: 10px;
+}
+.listCart li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listCart li img{
+    width: 90%;
+}
+.listCart li button{
+    background-color: #fff5;
+    border: none;
+}
+.listCart .count{
+    margin: 0 10px;
+}
+
+/* Footer css done by Alisha */
+div.footer{
+    width: 100%;
+    height: 600px;
+    background-color: var(--colour-pink);
+   margin-top:50px ;
+  
+  }
+  
+  .footer-info{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 30px;
+    gap: 150px;
+  }
+  
+  div.footersection{
+    margin-top: 80px;
+    text-align: center;
+    color: var(--colour-white);
+    font-size: small;
+  }
+  
+  .footer2{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;
+  }
+  
+  div.keepplaying{
+    color: var(--colour-white);
+    font-family: "oswald", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 8px;
+  }
+  
+  div.emailform{
+    width: 20%;
+  }
+  
+  input[type = text1]{
+    box-sizing: border-box;
+    background: transparent;
+    width: 100%;
+    border: 1px solid var(--colour-white);
+  }
+  
+  input[type = submit1]{
+    background: none;
+    width: 55px;
+    border-radius: 16px;
+    color: var(--colour-white);
+    border: 1px solid var(--colour-white);
+  }
+  
+  p.copyright{
+    text-align: center;
+    color: var(--colour-white);
+    font-size: small;
+  }
+
+  /* Define breakpoints */
+@media screen and (max-width: 768px) {
+    /* Styles for screens up to 768px */
+    .cart-container {
+      width: 90%;
+    }
+  
+    header {
+      grid-template-rows: 1fr;
+    }
+  
+    .header {
+      flex-direction: row;
+      gap: 20px;
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .header li:nth-child(1) {
+      flex-grow: 0;
+    }
+  
+    .logo-title {
+      font-size: 20px;
+    }
+  
+    .list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px */
+    .cart-container {
+      width: 100%;
+    }
+  
+    .header {
+      font-size: 14px;
+    }
+  
+    .logo-title {
+      font-size: 18px;
+    }
+  
+    .list {
+      grid-template-columns: 1fr;
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+  }
+
+
+  /* contact css done by alisha*/
 .contact{
   list-style: none;
   margin-top: 40px;
@@ -542,3 +780,5 @@ div.contactpage {
     gap: 20px;
   }
 }
+
+  
