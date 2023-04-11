@@ -20,36 +20,42 @@ let products = [
         id: 1,
         name: 'Bounce & Ball',
         image: '1.PNG',
+        priceSign:'$',
         price: 20.00,
     },
     {
         id: 2,
         name: 'Plane',
         image: '2.png',
+        priceSign:'$',
         price: 41.00,
     },
     {
         id: 3,
         name: 'Classic Car',
         image: '3.png',
+        priceSign:'$',
         price: 24.00,
     },
     {
         id: 4,
         name: 'Toy Truck',
         image: '4.png',
+        priceSign:'$',
         price: 40.00,
     },
     {
         id: 5,
         name: 'Rings Rattle',
         image: '5.png',
+        priceSign:'$',
         price: 35.00,
     },
     {
         id: 6,
         name: 'Skatebaord',
         image: '6.png',
+        priceSign:'$',
         price: 100.00,
     }
 ];
@@ -61,7 +67,7 @@ function initApp(){
         newDiv.innerHTML = `
             <img src="images/Cart/${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
+            <div class="price">${value.priceSign}${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Cart</button>`;
         list.appendChild(newDiv);
     })
@@ -87,7 +93,7 @@ function reloadCard(){
             newDiv.innerHTML = `
                 <div><img src="images/Cart/${value.image}"/></div>
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
+                <div>${value.priceSign}${value.price.toLocaleString()}</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
