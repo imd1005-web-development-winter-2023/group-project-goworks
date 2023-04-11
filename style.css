@@ -1,3 +1,4 @@
+
 /*
   CSS File
 */
@@ -574,5 +575,4 @@ section{
   .stockist, .stockist1 {
     flex-wrap: wrap;
     gap: 20px;
-  }
-}
+ }
