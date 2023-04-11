@@ -68,7 +68,7 @@ inititialise();*/
 
 
 
-///   SLIDESHOW    -start  --rasha ///
+/*///   SLIDESHOW    -start  --rasha ///
 
 // Get the slideshow container and images
 const slideshowContainer = document.querySelector('.slideshow-container');
