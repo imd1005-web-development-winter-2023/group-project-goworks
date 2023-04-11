@@ -124,8 +124,8 @@ header .shopping span{
 }
 
 .list .item button a:hover{
-  background-color:var(--colour-pink);
-  color: #0f0f0f;
+    background-color:var(--colour-pink);
+    color: #0f0f0f;
 }
 .cart{
     position: fixed;
