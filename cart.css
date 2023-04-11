@@ -116,10 +116,16 @@ header .shopping span{
 }
 .list .item button{
     background-color:rgb(230, 215, 131);
-    color: #fff;
+    color: var(--colour-black);
     width: 100%;
     padding: 10px;
+    border: none;
     border-radius: 5px;
+}
+
+.list .item button a:hover{
+  background-color:var(--colour-pink);
+  color: #0f0f0f;
 }
 .cart{
     position: fixed;
@@ -138,7 +144,7 @@ header .shopping span{
 }
 .cart h1{
     background-color:#FE4DAF;
-    color: #ffffff;
+    color:var(--colour-black);
     font-weight: 100;
     margin: 0;
     padding: 0 20px;
