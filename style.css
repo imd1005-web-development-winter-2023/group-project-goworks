@@ -290,16 +290,16 @@ p.copyright{
 }
 
 /* about css */
-.about{
+.about {
   list-style: none;
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px; 
+  gap: 50px;
 }
 
-.about li:nth-child(1){
+.about li:nth-child(1) {
   width: 300px;
   height: 300px;
   padding-top: 120px;
@@ -311,18 +311,43 @@ p.copyright{
   font-weight: bolder;
 }
 
-.about-title{
+.about-title {
   font-family: "oswald", sans-serif;
   font-weight: bold;
   font-size: 80px;
   letter-spacing: 8px;
 }
 
-.about-para{
+.about-para {
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
   font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about li:nth-child(1) {
+    width: 80%;
+    height: auto;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .about-para {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 /*
@@ -438,4 +463,19 @@ main {
    
    .footer{
      width: 100%;
+   
+}
+   
+@media (max-width: 768px) {
+  div.contactpage {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stockist, .stockist1 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
