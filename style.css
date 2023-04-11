@@ -421,3 +421,21 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+ @media screen and (max-width: 576px) {
+    /* Styles for screens up to 576px */
+    .cart-container {
+      width: 100%;
+    }
+  
+    .header {
+      font-size: 14px;
+    }
+  
+    .logo-title {
+      font-size: 18px;
+    }
+   
+   .footer{
+     width: 100%;
+}
