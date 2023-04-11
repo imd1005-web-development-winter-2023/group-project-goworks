@@ -1,4 +1,3 @@
-
 /*
   CSS File
 */
@@ -37,7 +36,7 @@ header{
 .header{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-style: normal;
-  font-size:30px;
+  font-size: 30px;
   letter-spacing: 10px;
   list-style:none;
   margin-top:50px;
@@ -292,16 +291,16 @@ p.copyright{
 }
 
 /* about css */
-.about {
+.about{
   list-style: none;
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  gap: 50px; 
 }
 
-.about li:nth-child(1) {
+.about li:nth-child(1){
   width: 300px;
   height: 300px;
   padding-top: 120px;
@@ -313,127 +312,23 @@ p.copyright{
   font-weight: bolder;
 }
 
-.about-title {
+.about-title{
   font-family: "oswald", sans-serif;
   font-weight: bold;
   font-size: 80px;
   letter-spacing: 8px;
 }
 
-.about-para {
+.about-para{
   text-align: center;
   margin-left: 25%;
   margin-right: 25%;
   font-size: 17px;
 }
 
-@media screen and (max-width: 768px) {
-  .about {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about li:nth-child(1) {
-    width: 80%;
-    height: auto;
-    padding: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .about-title {
-    font-size: 50px;
-    letter-spacing: 5px;
-  }
-
-  .about-para {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
 /*
   PAGE / BODY
 */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 50px;
-}
-/*slideshow added by rasha*/
-.slideshow-container {
-  width: 522px;
-  position:relative;
-  margin-right:20px;
-  margin-top: -560px;
-}
-
-.slideshow-container {
-  width: 522px;
-  height: 260px;
-  position:relative;
-  margin-right:40px;
-  margin-top: -250px;
-  margin-bottom: 50px;
-}
-
-.slideshow-container img {
-
-  position: absolute;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-
-}
-
-.slideshow-container img.active {
-  opacity: 1;
-}
-.top-right{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-.top-right img{
-
-  width: 260px;
-  height: 240px;
-  object-fit: cover;
-
-}
-.top-right img:first-child{
-  margin-bottom: 40px;
-}
-.top-right img:last-child{
-  object-fit: cover;
-}
-.middle{
-  display: flex;
-  position:absolute;
-  justify-content: center;
-  gap: 20px;
-  margin-top:1200px;
-
-}
-.middle img{
-  width: 480px;
-  height: 400px;
-  margin-bottom: 50px;
-}
-.middle img:first-child{
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
-  margin-right: 20px;
-}
 body {
   font-family: "oswald", sans-serif;
   font-style: normal;
@@ -466,7 +361,7 @@ section{
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background: url('/images/main-image.jpg') no-repeat;
+  background: url('/group-project-goworks-main/images/main-image.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -531,8 +426,6 @@ section{
   color:var(--colour-black);
 }
 
- /* Screen reader text utility class
-*/
 .sr-only {
   position: absolute;
   width: 1px;
@@ -544,35 +437,18 @@ section{
   white-space: nowrap;
   border-width: 0;
 }
-
- @media screen and (max-width: 576px) {
-    /* Styles for screens up to 576px */
-    .cart-container {
-      width: 100%;
-    }
-  
-    .header {
-      font-size: 14px;
-    }
-  
-    .logo-title {
-      font-size: 18px;
-    }
-   
-   .footer{
-     width: 100%;
-   
-}
-   
-@media (max-width: 768px) {
-  div.contactpage {
-    margin-right: 0;
-    width: 100%;
+@media(max-width:991px){
+  body{
+    font-size: 70%;
+  }
+  header{
+    padding: 2rem;
+  }
+  section{
+    padding:2rem;
+  }
+  .home{
+    background-position: left;
   }
 }
 
-@media (max-width: 480px) {
-  .stockist, .stockist1 {
-    flex-wrap: wrap;
-    gap: 20px;
- }
