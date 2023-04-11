@@ -311,5 +311,10 @@ div.footer{
     .list {
       grid-template-columns: 1fr;
     }
+
+    .footer{
+        width: 100%;
+    }
+
   }
   
